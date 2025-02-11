@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { adminService, authService } from "@/services/apiService";
-import { Sun, Moon, Bell, User, FileText, Shield, ChevronRight } from 'lucide-react';
+import { Sun, Moon, Bell, User, FileText, Shield, ChevronRight, Heart } from 'lucide-react';
 import LoginPage from "./pages/LoginPage";
 
 interface Policy {
@@ -171,7 +171,7 @@ const AdminDashboard = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <Shield className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+            <Heart className="w-8 h-8 text-blue-600" />
               <h1 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
                 Claims Management
               </h1>

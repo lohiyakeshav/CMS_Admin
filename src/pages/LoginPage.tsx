@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Mail, Lock } from 'lucide-react';
+import { Mail, Lock, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { authService } from '@/services/apiService';
@@ -42,7 +42,7 @@ const LoginPage: React.FC = () => {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
-            <Shield className="w-8 h-8 text-blue-600" />
+          <Heart className="w-8 h-8 text-blue-600" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Welcome Back</h1>
           <p className="text-gray-600">Sign in to access your admin dashboard</p>

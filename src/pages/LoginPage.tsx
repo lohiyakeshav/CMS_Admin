@@ -29,7 +29,7 @@ const LoginPage: React.FC = () => {
       toast.success(`Welcome back, ${response.user.name}!`);
       
       // Redirect to dashboard
-      window.location.href = '/dashboard';
+      window.location.href = '/';
     } catch (error: any) {
       toast.error(error.message || 'Failed to login');
     } finally {
